@@ -8,7 +8,7 @@ Perform titration curves of any acid-base pair.
 - numpy
 
 ## Examples
-python```
+```python
 
 # define the sample and the titrant species
 # first argument: concentration
