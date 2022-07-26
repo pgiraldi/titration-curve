@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -68,20 +67,7 @@ def derivative(y, x):
     return dy, dx
 
 def main():
-
-    sample = Acid(0.5, [4, 7])
-    titrant = Base(0.5)
-
-    phi, pH = titrate(sample, titrant)
-
-    plt.plot(phi, pH)
-
-    plt.title('Titulação legal!')
-    plt.xlabel('Fração titulada')
-    plt.ylabel('pH')
-    plt.ylim(0, 14)
-
-    plt.show()
+    pass
 
 
 if __name__ == '__main__':
