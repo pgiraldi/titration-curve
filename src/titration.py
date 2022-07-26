@@ -73,14 +73,13 @@ def main():
     titrant = Base(0.5)
 
     phi, pH = titrate(sample, titrant)
-    dpH, dphi = derivative(pH, phi)
 
-    plt.plot(dphi, dpH)
+    plt.plot(phi, pH)
 
     plt.title('Titulação legal!')
     plt.xlabel('Fração titulada')
     plt.ylabel('pH')
-    # plt.ylim(0, 14)
+    plt.ylim(0, 14)
 
     plt.show()
 
