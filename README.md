@@ -2,9 +2,10 @@
 Perform titration curves of any acid-base pair.
 
 ## Dependencies
-- python 3+
-- matplotlib
+- python >=3.6
 - numpy
+- matplotlib (optional)
+- For further info check pdm files
 
 ## Examples
 
