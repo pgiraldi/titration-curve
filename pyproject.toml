@@ -25,3 +25,9 @@ dev = [
     "isort>=5.10.1",
     "flake8>=4.0.1",
 ]
+
+[tool.pdm.scripts]
+lint = "flake8 src/"
+sort = "isort src/"
+format = "blue src/"
+all = {composite = ["sort", "format", "lint"]}
