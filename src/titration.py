@@ -4,7 +4,7 @@ import numpy as np
 class Substance:
     def __init__(self, conc, pK=[], vol=100):
         self.conc = conc
-        self.K = np.power(10., -np.array(pK))
+        self.K = np.power(10.0, -np.array(pK))
         self.len_K = len(pK) if pK else 1
         self.vol = vol
 
@@ -65,6 +65,7 @@ def derivative(y, x):
     dx = [(x[i + 1] + x[i]) / 2 for i in range(len(dy))]
 
     return dy, dx
+
 
 def main():
     pass
